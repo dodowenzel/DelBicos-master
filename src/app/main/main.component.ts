@@ -7,6 +7,8 @@ import { FooterComponent } from "../footer/footer.component";
 import { HeaderAloneComponent } from '../header-alone/header-alone.component';
 import { CadastroComponent } from '../cadastro/cadastro.component';
 import { LoginComponent } from '../login/login.component';
+import { HomeComponent } from '../home/home.component';
+
 @Component({
   selector: 'app-main',
   standalone: true,
@@ -18,7 +20,8 @@ import { LoginComponent } from '../login/login.component';
     FooterComponent,
     HeaderAloneComponent,
     CadastroComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
 ],
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.css'],

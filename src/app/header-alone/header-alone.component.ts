@@ -8,5 +8,5 @@ import { Component, Input  } from '@angular/core';
   styleUrl: './header-alone.component.css'
 })
 export class HeaderAloneComponent {
-  @Input() titulo: string = 'Sou cliente!';
+  @Input() titulo: string = 'ㅤㅤ';
 }
