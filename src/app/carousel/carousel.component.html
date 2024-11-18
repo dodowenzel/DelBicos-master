@@ -1,0 +1,22 @@
+<div class="carousel">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div *ngFor="let item of items; let i = index" [class.active]="i === 0" class="carousel-item">
+        <div class="carousel-image-container position-relative">
+          <img [src]="'assets/' + item.image" class="d-block w-100 carousel-image position-absolute" [alt]="item.title" [style.top]="item.top !== undefined ? '-'+item.top : 'auto'" [style.bottom]="item.bottom !== undefined ? '-'+item.bottom : 'auto'">
+        </div>
+        <div class="carousel-caption">
+          <h3>{{ item.title }}</h3>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
