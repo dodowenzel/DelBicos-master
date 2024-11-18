@@ -8,6 +8,7 @@ import { HeaderAloneComponent } from '../header-alone/header-alone.component';
 import { CadastroComponent } from '../cadastro/cadastro.component';
 import { LoginComponent } from '../login/login.component';
 import { HomeComponent } from '../home/home.component';
+import { CategoriasComponent } from "../categorias/categorias.component";
 
 @Component({
   selector: 'app-main',
@@ -21,7 +22,9 @@ import { HomeComponent } from '../home/home.component';
     HeaderAloneComponent,
     CadastroComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    CategoriasComponent,
+
 ],
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.css'],
